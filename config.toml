@@ -54,9 +54,18 @@ pygmentsUseClasses = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      hardWraps = false
+      hardWraps = true
       unsafe = true
       xhtml = false
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoLineBreaks = true
+      wrapStandAlone = true
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.extensions]
+      typographer = false
 
 [menu]
   [[menu.main]]
